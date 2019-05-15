@@ -1,0 +1,109 @@
+#mainwraper {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 66px;
+    padding: 20px 15px;
+    background: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#mainwraper h2 {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    color: #363636;
+    font-size: 2.6em;
+    line-height: 1.8em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 12px 0;
+    text-align: center;
+}
+
+#mainwraper h4 {
+    font-size: 1em;
+    color: #212121;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#wrapping {
+    width: 100%;
+    box-sizing: border-box;
+}
+.clearfix {
+    display: inline-block;
+}
+
+#aligned {
+    box-sizing: border-box;
+    float: left;
+    width: 400px;
+    margin-right: 50px;
+}
+
+#imgfix img{
+	width: 100%;
+}
+
+#aside {
+    float: left;
+    width: 500px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#aside .description p{
+	font-size: 14px;
+    color: #999;
+    line-height: 2em;
+    margin: 0;
+    width: 95%;
+}
+#aside .price h4{
+	margin-top: 30px;
+	font-size: 1em;
+    color: rgb(33, 33, 33);
+}
+#aside .price span{
+	font-weight: 300;
+    padding-left: 1em;
+    text-decoration: line-through;
+}
+#aside .state{
+    margin-bottom: 30px;
+}
+
+/*updating price css*/
+
+
+/* smaller screen dropoff *******/
+@media(max-width: 800px){
+	#aligned, #aside {
+    box-sizing: border-box;
+    float: none;
+    width: 100%;
+}
+}
+
+
+@media(max-width: 550px) {
+    
+}
+ 
+/* iPhone Landscape ********/
+@media(max-width: 480px) {
+  body {
+    padding: 10px 0px;
+  }
+}
+ 
+/* iPhone portrait *******/
+@media(max-width: 320px) {
+  body {
+    padding: 10px 0px;
+  }
+}

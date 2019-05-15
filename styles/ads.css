@@ -1,0 +1,201 @@
+#mainwraper {
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 66px;
+    padding: 20px 15px;
+    box-shadow: 4px 6px 6px 4px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#mainwraper h2 {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    color: #363636;
+    font-size: 2.6em;
+    line-height: 1.8em;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding: 12px 0;
+    text-align: center;
+}
+
+#cars-form {
+    box-sizing: border-box;
+}
+
+#mainwraper form {
+    display: block;
+    margin-top: 0em;
+}
+
+#wrapping {
+    width: 100%;
+    box-sizing: border-box;
+}
+.clearfix {
+    display: inline-block;
+}
+#cars-form #aligned {
+    box-sizing: border-box;
+    float: left;
+    width: 450px;
+    margin-right: 50px;
+}
+
+#cars-form input#manufacture {
+    background: #fff url('../images/icons/industry.png') 5px 4px no-repeat;
+}
+
+#cars-form input#model {
+    background: #fff url('../images/icons/model.png') 5px 4px no-repeat;
+}
+#cars-form input#price {
+    background: #fff url('../images/icons/cash.png') 5px 4px no-repeat;
+}
+#cars-form input#photo {
+    background: #fff url('../images/icons/pic.png') 5px 4px no-repeat;
+}
+#cars-form textarea.txtblock {
+    background: #fff url('../images/icons/note.png') 5px 4px no-repeat;
+}
+
+#cars-form .txtinput {
+    display: block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    margin-bottom: 20px;
+    font-size: 1.55em;
+    padding: 11px 25px;
+    padding-left: 55px;
+    width: 90%;
+    color: #777;
+}
+#cars-form textarea {
+    display: block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    padding: 11px 25px;
+    padding-left: 55px;
+    width: 90%;
+    height: 180px;
+    color: #777;
+} 
+
+#cars-form #aside {
+    float: left;
+    width: 250px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mainwraper h3 {
+    letter-spacing: -0.04em;
+    font-weight: bold;
+    font-size: 1.44em;
+    margin-bottom: 10px;
+}
+select.selmenu {
+    font-size: 17px;
+    color: #676767;
+    padding: 9px !important;
+    border: 1px solid #aaa;
+    width: 200px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+span.radiobadge {
+    display: block;
+    margin-bottom: 8px;
+}
+input[type="radio" i] {
+    margin: 3px 3px 0px 5px;
+}
+span.radiobadge label {
+    font-size: 1.2em;
+    padding-bottom: 4px;
+}
+#buttons {
+    display: block;
+    padding-top: 10px;
+}
+
+
+/* smaller screen dropoff *******/
+@media(max-width: 800px){
+    #cars-form #aligned {
+    width: 100%;
+    float: none;
+    display: block;
+}
+    #cars-form #aside{
+    width: 100%;
+    display: block;
+    float: none;
+  }
+    #cars-form .txtinput, #cars-form textarea {
+    width: 90%;
+}
+#recipientcase {
+    float: left;
+    display: block;
+    margin-right: 55px;
+}
+#prioritycase {
+    float: left;
+    display: block;
+}
+
+@media(max-width: 550px) {
+  #cars-form .txtinput,
+  #cars-form textarea {
+    width: 80%;
+  }
+}
+ 
+/* iPhone Landscape ********/
+@media(max-width: 480px) {
+  body {
+    padding: 10px 0px;
+  }
+  select.selmenu {
+    width: 190px;
+  }
+}
+ 
+/* iPhone portrait *******/
+@media(max-width: 320px) {
+  body {
+    padding: 10px 0px;
+  }
+  #cars-form .txtinput, 
+  #cars-form textarea {
+    width: 70%;
+  }
+  #cars-form 
+  #aligned {
+    overflow: hidden;
+  }
+  select.selmenu {
+    width: 160px;
+  }
+  #recipientcase {
+    margin-right: 30px;
+  }
+}
