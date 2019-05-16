@@ -153,6 +153,48 @@ a {
     color: #2F2F2F;
 }
 
+/* --------------------------------------
+   Error Message
+   -------------------------------------- */
+   /* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  text-align: left;
+  padding: 5px 25px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+#message .valid {
+  color: green;
+}
+
+#message .valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+#message .invalid {
+  color: red;
+}
+
+#message .invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+
 @media only screen and (max-width: 430px){
 	.modal-body {
     	padding: 30px 25px 35px;

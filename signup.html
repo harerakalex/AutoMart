@@ -25,12 +25,21 @@
         </div>
         <div class="modal-body modal-spa">
           <div class="login-form">
-            <form action="" method="post">
+            <form action="" method="post" id="myform">
               <input type="text" id="fname" name="firstname" placeholder="First Name" title="please enter your fisrt name" required="">
               <input type="text" id="sname" name="lastname" placeholder="Last Name" title="please enter your last name" required="">
               <input type="email" id="email" class="user" name="loginid" placeholder="Email eg: me@example.com" title="please enter valid email" required="">
               <input type="text" class="address" id="address" name="address" placeholder="address eg: Kigali, Rwanda" required="">
               <input type="password" class="lock" id="password1" name="userpassword" placeholder="password" required="" value="">
+
+            <div id="message">
+              <h3>Password must contain the following:</h3>
+              <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+              <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+              <p id="number" class="invalid">A <b>number</b></p>
+              <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+
               <input type="password" class="lock" id="password2" name="usercomfirmpassword" placeholder="confirm password" required="" value="">
               <div class="signin-rit">
                 <span class="checkbox1">
@@ -39,7 +48,7 @@
                 <a class="pp" href="#">Privacy Policy</a>
                 <div class="clear"> </div>
               </div>
-              <input type="submit" value="Sign Up">
+              <input type="submit" value="Sign Up" id="btnsubmit">
             </form>
             <p>Have an Account? <a href="signin.html">Login</a></p>
             </div>
