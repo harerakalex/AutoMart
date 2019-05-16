@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Carlos Harerimana">
+  <title>AutoMart | Post</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/ads.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Auto</span><i class="fas fa-car"></i>Mart</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html" class="upper">Home</a></li>
+            <li><a href="order_list.html" class="upper">Orders</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="dropbtn">Harera 
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <!-- <a href="#">Reset Password</a> -->
+                  <a href="signin.html">Logout</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  <section id="mainwraper">
+    <h2>Post Your Car</h2>
+    <form name="cars" id="cars-form" action="" method="post">
+    <div class="clearfix" id="wrapping">
+      <section id="aligned">
+        <input name="manufacture" tabindex="1" class="txtinput" id="manufacture" type="text" placeholder="Car Manufacture" autocomplete="off">
+      
+        <input name="model" tabindex="2" class="txtinput" id="model" type="text" placeholder="Car Model" autocomplete="off">
+      
+        <input name="price" tabindex="3" class="txtinput" id="price" type="number" placeholder="Car Price" autocomplete="off">
+      
+        <input name="photo" tabindex="4" class="txtinput" id="photo" type="file" accept="image/*">
+      
+        <textarea name="message" tabindex="5" class="txtblock" id="message" placeholder="Enter some desription..."></textarea>
+      </section>
+      
+      <section class="clearfix" id="aside">
+        <section id="recipientcase">
+        <h3>Car Type:</h3>
+          <select name="recipient" tabindex="6" class="selmenu" id="recipient">
+              <option value="car">car</option>
+              <option value="truck">truck</option>
+              <option value="van">van</option>
+              <option value="trailler">Trailler</option>
+              <option value="sport car">sport car</option>
+          </select>
+        </section>
+        
+        <section id="prioritycase">
+          <h3>State:</h3>
+          <span class="radiobadge">
+            <input name="priority" id="low" type="radio" checked="checked" value="new">
+            <label for="low">New</label>
+          </span>
+        
+          <span class="radiobadge">
+            <input name="priority" id="med" type="radio" value="used">
+            <label for="med">Used</label>
+          </span>
+        
+        </section>
+      </section>
+    </div>
+
+
+    <section id="buttons">
+      <input name="reset" class="resetbtn" id="resetbtn" type="reset" value="Reset">
+      <input name="submit" tabindex="7" class="button_1" id="submitbtn" type="submit" value="Publish">
+    </section>
+    </form>
+
+  </section>
+
+
+
+  <footer>
+    <p>AutoMart designed by Carlos Harerimana, Copyright &copy; 2019</p>
+  </footer>
+
+  
+ 
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+  
+</body>
+
+</html>
